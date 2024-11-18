@@ -96,11 +96,7 @@
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = SystemColors.ControlLight;
-<<<<<<< HEAD
-            ClientSize = new Size(446, 216);
-=======
             ClientSize = new Size(511, 288);
->>>>>>> b0d1e14c1d85ebabebacedb3ed5f4ea01241777b
             Controls.Add(groupBox1);
             FormBorderStyle = FormBorderStyle.None;
             Margin = new Padding(3, 2, 3, 2);
