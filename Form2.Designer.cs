@@ -29,6 +29,10 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
+            btnAgregar = new Button();
+            label4 = new Label();
+            txtbCorreo = new TextBox();
+            btnAtras = new Button();
             cmbRamo = new ComboBox();
             txtbApellido = new TextBox();
             txtbName = new TextBox();
@@ -38,16 +42,19 @@
             label2 = new Label();
             label1 = new Label();
             groupBox2 = new GroupBox();
+            btnActualizar = new Button();
+            label6 = new Label();
+            btnFiltrar = new Button();
+            btnEliminar = new Button();
             DataGridView = new DataGridView();
-            btnAtras = new Button();
-            txtbCorreo = new TextBox();
-            label4 = new Label();
             groupBox1.SuspendLayout();
+            groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridView).BeginInit();
             SuspendLayout();
             // 
             // groupBox1
             // 
+            groupBox1.Controls.Add(btnAgregar);
             groupBox1.Controls.Add(label4);
             groupBox1.Controls.Add(txtbCorreo);
             groupBox1.Controls.Add(btnAtras);
@@ -64,6 +71,53 @@
             groupBox1.Size = new Size(304, 649);
             groupBox1.TabIndex = 0;
             groupBox1.TabStop = false;
+            // 
+            // btnAgregar
+            // 
+            btnAgregar.BackColor = SystemColors.ControlDarkDark;
+            btnAgregar.FlatAppearance.BorderSize = 0;
+            btnAgregar.FlatStyle = FlatStyle.Flat;
+            btnAgregar.Font = new Font("Bahnschrift", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAgregar.ForeColor = Color.White;
+            btnAgregar.Location = new Point(98, 576);
+            btnAgregar.Name = "btnAgregar";
+            btnAgregar.Size = new Size(103, 41);
+            btnAgregar.TabIndex = 12;
+            btnAgregar.Text = "Agregar";
+            btnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label4.Location = new Point(23, 134);
+            label4.Name = "label4";
+            label4.Size = new Size(76, 28);
+            label4.TabIndex = 11;
+            label4.Text = "Correo:";
+            // 
+            // txtbCorreo
+            // 
+            txtbCorreo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            txtbCorreo.Location = new Point(23, 165);
+            txtbCorreo.Name = "txtbCorreo";
+            txtbCorreo.Size = new Size(262, 34);
+            txtbCorreo.TabIndex = 10;
+            // 
+            // btnAtras
+            // 
+            btnAtras.BackColor = SystemColors.ControlDarkDark;
+            btnAtras.FlatAppearance.BorderSize = 0;
+            btnAtras.FlatStyle = FlatStyle.Flat;
+            btnAtras.Font = new Font("Bahnschrift", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAtras.ForeColor = Color.White;
+            btnAtras.Location = new Point(0, 0);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(103, 41);
+            btnAtras.TabIndex = 6;
+            btnAtras.Text = "Atrás";
+            btnAtras.UseVisualStyleBackColor = false;
+            btnAtras.Click += btnAtras_Click;
             // 
             // cmbRamo
             // 
@@ -141,11 +195,68 @@
             // groupBox2
             // 
             groupBox2.BackColor = Color.FromArgb(234, 234, 234);
+            groupBox2.Controls.Add(btnActualizar);
+            groupBox2.Controls.Add(label6);
+            groupBox2.Controls.Add(btnFiltrar);
+            groupBox2.Controls.Add(btnEliminar);
             groupBox2.Location = new Point(322, 12);
             groupBox2.Name = "groupBox2";
             groupBox2.Size = new Size(928, 159);
             groupBox2.TabIndex = 1;
             groupBox2.TabStop = false;
+            // 
+            // btnActualizar
+            // 
+            btnActualizar.BackColor = SystemColors.ControlDarkDark;
+            btnActualizar.FlatAppearance.BorderSize = 0;
+            btnActualizar.FlatStyle = FlatStyle.Flat;
+            btnActualizar.Font = new Font("Bahnschrift", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnActualizar.ForeColor = Color.White;
+            btnActualizar.Location = new Point(6, 99);
+            btnActualizar.Name = "btnActualizar";
+            btnActualizar.Size = new Size(132, 41);
+            btnActualizar.TabIndex = 14;
+            btnActualizar.Text = "Actualizar";
+            btnActualizar.UseVisualStyleBackColor = false;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Bahnschrift Condensed", 28.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ControlDarkDark;
+            label6.Location = new Point(412, 0);
+            label6.Name = "label6";
+            label6.Size = new Size(108, 57);
+            label6.TabIndex = 15;
+            label6.Text = "Filtro";
+            // 
+            // btnFiltrar
+            // 
+            btnFiltrar.BackColor = SystemColors.ControlDarkDark;
+            btnFiltrar.FlatAppearance.BorderSize = 0;
+            btnFiltrar.FlatStyle = FlatStyle.Flat;
+            btnFiltrar.Font = new Font("Bahnschrift", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnFiltrar.ForeColor = Color.White;
+            btnFiltrar.Location = new Point(833, 99);
+            btnFiltrar.Name = "btnFiltrar";
+            btnFiltrar.Size = new Size(89, 41);
+            btnFiltrar.TabIndex = 14;
+            btnFiltrar.Text = "Filtrar";
+            btnFiltrar.UseVisualStyleBackColor = false;
+            // 
+            // btnEliminar
+            // 
+            btnEliminar.BackColor = SystemColors.ControlDarkDark;
+            btnEliminar.FlatAppearance.BorderSize = 0;
+            btnEliminar.FlatStyle = FlatStyle.Flat;
+            btnEliminar.Font = new Font("Bahnschrift", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEliminar.ForeColor = Color.White;
+            btnEliminar.Location = new Point(162, 99);
+            btnEliminar.Name = "btnEliminar";
+            btnEliminar.Size = new Size(112, 41);
+            btnEliminar.TabIndex = 13;
+            btnEliminar.Text = "Eliminar";
+            btnEliminar.UseVisualStyleBackColor = false;
             // 
             // DataGridView
             // 
@@ -157,39 +268,6 @@
             DataGridView.Size = new Size(928, 484);
             DataGridView.TabIndex = 2;
             // 
-            // btnAtras
-            // 
-            btnAtras.BackColor = SystemColors.ControlDarkDark;
-            btnAtras.FlatAppearance.BorderSize = 0;
-            btnAtras.FlatStyle = FlatStyle.Flat;
-            btnAtras.Font = new Font("Bahnschrift", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnAtras.ForeColor = Color.White;
-            btnAtras.Location = new Point(0, 0);
-            btnAtras.Name = "btnAtras";
-            btnAtras.Size = new Size(103, 41);
-            btnAtras.TabIndex = 6;
-            btnAtras.Text = "Atrás";
-            btnAtras.UseVisualStyleBackColor = false;
-            btnAtras.Click += btnAtras_Click;
-            // 
-            // txtbCorreo
-            // 
-            txtbCorreo.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            txtbCorreo.Location = new Point(23, 165);
-            txtbCorreo.Name = "txtbCorreo";
-            txtbCorreo.Size = new Size(262, 34);
-            txtbCorreo.TabIndex = 10;
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(23, 134);
-            label4.Name = "label4";
-            label4.Size = new Size(76, 28);
-            label4.TabIndex = 11;
-            label4.Text = "Correo:";
-            // 
             // RegistroProfesores
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -199,10 +277,14 @@
             Controls.Add(DataGridView);
             Controls.Add(groupBox2);
             Controls.Add(groupBox1);
+            FormBorderStyle = FormBorderStyle.None;
             Name = "RegistroProfesores";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Registro Profesores";
             groupBox1.ResumeLayout(false);
             groupBox1.PerformLayout();
+            groupBox2.ResumeLayout(false);
+            groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)DataGridView).EndInit();
             ResumeLayout(false);
         }
@@ -223,5 +305,10 @@
         private Button btnAtras;
         private Label label4;
         private TextBox txtbCorreo;
+        private Button btnAgregar;
+        private Button btnEliminar;
+        private Button btnActualizar;
+        private Button btnFiltrar;
+        private Label label6;
     }
 }

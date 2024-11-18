@@ -74,6 +74,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlLight;
             ClientSize = new Size(511, 288);
             Controls.Add(groupBox1);
             Name = "MenuPrincipal";
