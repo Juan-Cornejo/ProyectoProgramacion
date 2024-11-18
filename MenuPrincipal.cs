@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace TestLogin
 {
-    public partial class MenuPrincipal : Form // Por solucionar boton estudiantes
+    public partial class MenuPrincipal : Form
     {
-        AdminForm Menu = new AdminForm();
-        AdminForm Menu2 = new AdminForm();
+        RegistroProfesores Menu = new RegistroProfesores();
+        RegistroEstudiantes Menu2 = new RegistroEstudiantes();
         public MenuPrincipal()
         {
             InitializeComponent();

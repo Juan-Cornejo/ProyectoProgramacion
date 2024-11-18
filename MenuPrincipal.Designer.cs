@@ -45,6 +45,7 @@
             linkLabelEstudiantes.TabIndex = 0;
             linkLabelEstudiantes.TabStop = true;
             linkLabelEstudiantes.Text = "Gestionar Estudiantes";
+            linkLabelEstudiantes.LinkClicked += linkLabelEstudiantes_LinkClicked;
             // 
             // groupBox1
             // 

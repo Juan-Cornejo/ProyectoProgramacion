@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TestLogin
 {
-    public partial class RegistroProfesores : Form
+    public partial class RegistroEstudiantes : Form
     {
-        public RegistroProfesores()
+        public RegistroEstudiantes()
         {
             InitializeComponent();
         }

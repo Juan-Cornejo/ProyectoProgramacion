@@ -15,7 +15,7 @@ namespace TestLogin
         {
             if (txtbUser.Text == "test" && txtbPassword.Text == "1234")
             {
-                new AdminForm().Show();
+                new MenuPrincipal().Show();
                 this.Hide();
             }
             else
