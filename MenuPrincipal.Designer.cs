@@ -28,54 +28,78 @@
         /// </summary>
         private void InitializeComponent()
         {
-            linkLabelEstudiantes = new LinkLabel();
             groupBox1 = new GroupBox();
-            linkLabelProfesores = new LinkLabel();
+            btnEstudiantes = new Button();
+            label2 = new Label();
+            btnProfesores = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
-            // linkLabelEstudiantes
-            // 
-            linkLabelEstudiantes.AutoSize = true;
-            linkLabelEstudiantes.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabelEstudiantes.LinkColor = Color.Black;
-            linkLabelEstudiantes.Location = new Point(21, 110);
-            linkLabelEstudiantes.Name = "linkLabelEstudiantes";
-            linkLabelEstudiantes.Size = new Size(200, 28);
-            linkLabelEstudiantes.TabIndex = 0;
-            linkLabelEstudiantes.TabStop = true;
-            linkLabelEstudiantes.Text = "Gestionar Estudiantes";
-            linkLabelEstudiantes.LinkClicked += linkLabelEstudiantes_LinkClicked;
-            // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(linkLabelProfesores);
-            groupBox1.Controls.Add(linkLabelEstudiantes);
-            groupBox1.Location = new Point(12, 8);
+            groupBox1.Controls.Add(btnEstudiantes);
+            groupBox1.Controls.Add(label2);
+            groupBox1.Controls.Add(btnProfesores);
+            groupBox1.Location = new Point(10, 6);
+            groupBox1.Margin = new Padding(3, 2, 3, 2);
             groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(487, 268);
+            groupBox1.Padding = new Padding(3, 2, 3, 2);
+            groupBox1.Size = new Size(426, 201);
             groupBox1.TabIndex = 1;
             groupBox1.TabStop = false;
             // 
-            // linkLabelProfesores
+            // btnEstudiantes
             // 
-            linkLabelProfesores.AutoSize = true;
-            linkLabelProfesores.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            linkLabelProfesores.LinkColor = Color.Black;
-            linkLabelProfesores.Location = new Point(257, 110);
-            linkLabelProfesores.Name = "linkLabelProfesores";
-            linkLabelProfesores.Size = new Size(192, 28);
-            linkLabelProfesores.TabIndex = 1;
-            linkLabelProfesores.TabStop = true;
-            linkLabelProfesores.Text = "Gestionar Profesores";
-            linkLabelProfesores.LinkClicked += linkLabelProfesores_LinkClicked;
+            btnEstudiantes.BackColor = SystemColors.ControlDarkDark;
+            btnEstudiantes.Font = new Font("Bahnschrift", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnEstudiantes.ForeColor = Color.White;
+            btnEstudiantes.Image = Properties.Resources.profesor;
+            btnEstudiantes.Location = new Point(252, 46);
+            btnEstudiantes.Name = "btnEstudiantes";
+            btnEstudiantes.RightToLeft = RightToLeft.No;
+            btnEstudiantes.Size = new Size(131, 108);
+            btnEstudiantes.TabIndex = 3;
+            btnEstudiantes.Text = "Profesores";
+            btnEstudiantes.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnEstudiantes.UseVisualStyleBackColor = false;
+            btnEstudiantes.Click += btnEstudiantes_Click;
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(320, 3);
+            label2.Name = "label2";
+            label2.Size = new Size(106, 17);
+            label2.TabIndex = 6;
+            label2.Text = "Cerrar sesión";
+            label2.Click += label2_Click;
+            // 
+            // btnProfesores
+            // 
+            btnProfesores.BackColor = SystemColors.ControlDarkDark;
+            btnProfesores.Font = new Font("Bahnschrift", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnProfesores.ForeColor = Color.White;
+            btnProfesores.Image = Properties.Resources.gorro_de_graduacion__2_;
+            btnProfesores.ImageAlign = ContentAlignment.BottomCenter;
+            btnProfesores.Location = new Point(39, 46);
+            btnProfesores.Name = "btnProfesores";
+            btnProfesores.Size = new Size(131, 108);
+            btnProfesores.TabIndex = 2;
+            btnProfesores.Text = "Estudiantes";
+            btnProfesores.TextImageRelation = TextImageRelation.ImageAboveText;
+            btnProfesores.UseVisualStyleBackColor = false;
+            btnProfesores.Click += btnProfesores_Click;
             // 
             // MenuPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(511, 288);
+            BackColor = SystemColors.ControlLight;
+            ClientSize = new Size(446, 216);
             Controls.Add(groupBox1);
+            FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "MenuPrincipal";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Menu Principal";
@@ -85,9 +109,9 @@
         }
 
         #endregion
-
-        private LinkLabel linkLabelEstudiantes;
         private GroupBox groupBox1;
-        private LinkLabel linkLabelProfesores;
+        private Label label2;
+        private Button btnProfesores;
+        private Button btnEstudiantes;
     }
 }

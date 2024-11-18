@@ -18,15 +18,21 @@ namespace TestLogin
         {
             InitializeComponent();
         }
+        private void label2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            new LoginForm().Show();
+        }
 
-        private void linkLabelProfesores_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnProfesores_Click(object sender, EventArgs e)
         {
             Menu.Show();
             this.Hide();
         }
 
-        private void linkLabelEstudiantes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        private void btnEstudiantes_Click(object sender, EventArgs e)
         {
+
             Menu2.Show();
             this.Hide();
         }
