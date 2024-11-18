@@ -18,6 +18,11 @@ namespace TestLogin
                 new MenuPrincipal().Show();
                 this.Hide();
             }
+            else if (txtbUser.Text == "user" && txtbPassword.Text == "1234")
+            {
+                new MenuEstudiante().Show();
+                this.Hide();
+            }
             else
             {
                 MessageBox.Show("El usuario o contraseña es incorrecto, inténtelo nuevamente."
