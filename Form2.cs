@@ -10,19 +10,11 @@ using System.Windows.Forms;
 
 namespace TestLogin
 {
-    public partial class RegistroProfesores : Form
+    public partial class AdminForm : Form
     {
-        public RegistroProfesores()
+        public AdminForm()
         {
             InitializeComponent();
-        }
-        public void ShowProfesores()
-        {
-            this.Text = "Profesores";
-        }
-        public void ShowEstudiantes()
-        {
-            this.Text = "Estudiantes";
         }
     }
 }

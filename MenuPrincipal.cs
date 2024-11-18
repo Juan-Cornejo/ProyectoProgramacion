@@ -7,14 +7,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace TestLogin
 {
-    public partial class MenuPrincipal : Form
+    public partial class MenuPrincipal : Form // Por solucionar boton estudiantes
     {
-        RegistroProfesores Menu = new RegistroProfesores();
-        RegistroEstudiantes Menu1 = new RegistroEstudiantes();
+        AdminForm Menu = new AdminForm();
+        AdminForm Menu2 = new AdminForm();
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -25,9 +24,10 @@ namespace TestLogin
             Menu.Show();
             this.Hide();
         }
+
         private void linkLabelEstudiantes_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Menu1.Show();
+            Menu2.Show();
             this.Hide();
         }
     }
