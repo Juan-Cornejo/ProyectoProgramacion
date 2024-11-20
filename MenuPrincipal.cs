@@ -26,15 +26,14 @@ namespace TestLogin
 
         private void btnProfesores_Click(object sender, EventArgs e)
         {
-            Menu.Show();
             this.Hide();
+            Menu.Show();
         }
 
         private void btnEstudiantes_Click(object sender, EventArgs e)
         {
-
-            Menu2.Show();
             this.Hide();
+            Menu2.Show();
         }
     }
 }

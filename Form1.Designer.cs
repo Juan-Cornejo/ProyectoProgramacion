@@ -172,7 +172,6 @@
             Icon = (Icon)resources.GetObject("$this.Icon");
             Name = "LoginForm";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Iniciar Sesión";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();

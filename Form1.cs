@@ -13,15 +13,19 @@ namespace TestLogin
 
         private void btnIniciar_Click(object sender, EventArgs e)
         {
-            if (txtbUser.Text == "test" && txtbPassword.Text == "1234")
+            if (txtbUser.Text == "admin" && txtbPassword.Text == "1234")
             {
                 new MenuPrincipal().Show();
                 this.Hide();
+                MessageBox.Show("Bienvenido Admin.",
+                    "Ingreso exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
-            else if (txtbUser.Text == "user" && txtbPassword.Text == "1234")
+            else if (txtbUser.Text == "user@alu.cc.cl" && txtbPassword.Text == "1234")
             {
                 new MenuEstudiante().Show();
                 this.Hide();
+                MessageBox.Show("Bienvenido Estudiante.",
+                    "Ingreso exitoso", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
